@@ -1,4 +1,12 @@
-<header>
+<header id="page_header" role="banner">
+<nav id="utility">
+			<%if user_signed_in? %>
+					Signed in as <%=current_user.email%>:
+					<%= link_to "Sign Out", destroy_user_session_path, :method => :delete%>
+				<%else%>
+					<%= link_to "Sign Up", new_user_registration_path%> or <%= link_to "Sign in", new_user_session_path%>
+			<%end%>
+		</nav>
 <h1>Qiushi Huang's Rails Pages</h1>
 <h2>After a lot of work, finally publish here</h2>
 </header>

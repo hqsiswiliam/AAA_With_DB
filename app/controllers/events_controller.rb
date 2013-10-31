@@ -1,4 +1,7 @@
 class EventsController < ApplicationController
+  before_filter :authenticate_user!, :except => [:index, :show]
+
+  respond_to :html, :json, :xml
   # GET /events
   # GET /events.json
   def index
@@ -25,7 +28,8 @@ class EventsController < ApplicationController
   # GET /events/new.json
   def new
     @event = Event.new
-
+    puts params[:a]
+    puts params[:b]
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @event }
