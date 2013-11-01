@@ -8,13 +8,15 @@
 	  <%= csrf_meta_tags %>
 	</head>
 	<body>
+		
 		<div id="container">
-		<%= render 'layouts/header'%>
 
+		<%= render 'layouts/header'%>
+		<%= render 'layouts/navigation'%>
 		<p class="notice"><%= notice %></p>
 		<p class="alert"><%= alert %></p>
-
-		<%= render 'layouts/navigation'%>
+		
+		
 		<font color = '#284b66'>
 			<%= yield %>
 		</font>

@@ -1,5 +1,5 @@
 div#container{
-
+	
 	display: block;
 	position:relative;
 	min-height: 1000px;
@@ -15,7 +15,7 @@ header#page_header{
 	padding:10px; 15px;
 }
 
-nav#utility{
+section#utility{
 	float: right;
 	font-size:1em;
 }

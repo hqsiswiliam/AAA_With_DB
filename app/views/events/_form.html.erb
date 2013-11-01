@@ -1,3 +1,8 @@
+<script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+  </script>
 <%= form_for(@event) do |f| %>
   <% if @event.errors.any? %>
     <div id="error_explanation">
@@ -18,7 +23,7 @@
   
   <div class="field">
     <%= f.label :date %><br />
-    <%= f.date_select :date %>
+    <%= f.text_field :date, :id=>"datepicker" %>
   </div>
   <div class="field">
     <%= f.label :description %><br />
