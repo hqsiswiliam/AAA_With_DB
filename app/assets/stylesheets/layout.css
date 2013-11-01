@@ -1,14 +1,18 @@
 div#container{
-	
+	border-radius: 15px;
 	display: block;
 	position:relative;
 	min-height: 1000px;
 	width:1000px;
 	margin:0 auto;
 	background-color: #eff5fa;
+	/*To add shadow*/
+	box-shadow: 10px 10px 5px #888888;
 }
 
 header#page_header{
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
 	background-color: #bfc4c8;
 	text-align: center;
 	color:#000000;

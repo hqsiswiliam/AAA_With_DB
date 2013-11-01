@@ -1,4 +1,6 @@
 nav#main_nav{
+
+
 	/*ul{
 		text-align: center;
 	}
@@ -23,6 +25,7 @@ padding:0;
 div.horizontal li
 {
 float:left;
+border-radius: 15px;
 }
 div.horizontal a
 {
@@ -31,16 +34,20 @@ width:242px;
 }
 div.horizontal a:link,div.horizontal a:visited
 {
+border-radius: 5px;
 font-weight:bold;
 color:#33322a;
-background-color:#fffbd6;
+background-color:#ccc9b4;
 text-align:center;
 padding:4px;
 text-decoration:none;
 text-transform:uppercase;
+
 }
 div.horizontal a:hover,div.horizontal a:active
 {
-background-color:#e5e1c0;
+border-radius: 5px;
+background-color:#fffce2;
+box-shadow: 0px 10px 2px #7a7a7a;
 }
 }
