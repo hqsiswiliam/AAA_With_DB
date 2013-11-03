@@ -1,4 +1,4 @@
-<nav id="main_nav" role="navigation"> 
+<!-- <nav id="main_nav" role="navigation"> 
 
 
 <div class="horizontal">
@@ -10,13 +10,30 @@
 	</ul> 
 	</div>
 </nav>
+ -->
 
 
-<!-- <nav id="main_nav" role="navigation" > 
-<div class="btn-group btn-group-lg ">
-  <li><%= button_to "Home", root_path, :class => "btn btn-primary", :method => :get%></li> 
-  <li><%= button_to "Events", events_path, :class => "btn btn-primary", :method => :get%></li> 
-  <li><%= button_to "Discussion", discussion_path, :class => "btn btn-primary", :method => :get%></li> 
-  <li><%= button_to "Shop", shop_path, :class => "btn btn-primary", :method => :get%></li> 
-</div>
-</nav> -->
+<ul class="meun">
+		<li class="meun green">
+			<p><%= link_to "Home", root_path %></p>
+			<br>
+			<p class="subtext">HOME PAGE</p>
+		</li>
+		<li class="meun yellow">
+			<p><%= link_to "Events", events_path %></p>
+			<br>
+			<p class="subtext">EVENTS PAGE</p>
+		</li> 
+		<li class="meun purple">
+			<p><%= link_to "Discussion", discussion_path %></p>
+			<br>
+			<p class="subtext">DISCUSSION</p>
+		</li> 
+		<li class="meun blue">
+			<p><%= link_to "Shop", shop_path %></p>
+			<br>
+			<p class="subtext">SHOP</p>
+		</li>
+</ul class="meun"> 
+
+
