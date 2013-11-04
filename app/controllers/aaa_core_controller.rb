@@ -6,6 +6,7 @@ class AaaCoreController < ApplicationController
 
   def shop
   	@title = "Shop"
+  	@sales_items = SalesItem.all
   end
 
   def discussion

@@ -1,2 +1,13 @@
-<h1>AaaCore#shop</h1>
-<p>Find me in app/views/aaa_core/shop.html.erb</p>
+<article id="shop">
+	<% @sales_items.each do |sales_item|%>
+	<section>
+		<h1><%= sales_item.name%></h1>
+		<p>
+			<%= sales_item.description %>
+		</p>
+		<p>
+			<%= sales_item.price %> 
+		</p>
+	</section>
+	<%end%>
+</article>
