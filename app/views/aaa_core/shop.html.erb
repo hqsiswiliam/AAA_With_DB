@@ -3,6 +3,9 @@
 	<section>
 		<h1><%= sales_item.name%></h1>
 		<p>
+		<%= image_tag sales_item.image_url(:thumb) if sales_item.image? %>
+		</p>
+		<p>
 			<%= sales_item.description %>
 		</p>
 		<p>
